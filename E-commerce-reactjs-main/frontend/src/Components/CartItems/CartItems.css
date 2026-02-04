@@ -29,9 +29,40 @@
     cursor: pointer;
 }
 .cartitems-quantity{
-height: 40px;
-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
 }
+
+/* - and + buttons */
+.cartitems-quantity button{
+    width: 35px;
+    height: 100%;
+    border: none;
+    background: #f3f3f3;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cartitems-quantity button:hover{
+    background: #ddd;
+}
+
+/* quantity number */
+.cartitems-quantity span{
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .cartitems-down{
     display: flex;
     margin: 70px 0px;

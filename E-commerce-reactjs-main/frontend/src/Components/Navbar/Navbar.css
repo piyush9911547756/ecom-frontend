@@ -1,8 +1,10 @@
 .navbar{
     display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow:0 1px 3px -2px black ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    box-shadow: 0 1px 3px -2px black;
+    position: relative;
 }
 .nav-logo{
     display: flex;
@@ -19,15 +21,14 @@
     align-items: center;
     list-style: none;
     gap: 50px;
-    color: #626262;
     font-size: 18px;
     font-weight: 500;
+    transition: all 0.3s ease;
 }
 .nav-menu li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap:3px;
     cursor: pointer;
 }
@@ -41,7 +42,7 @@
 .nav-login-cart{
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 25px;
 }
 .nav-login-cart button{
     width: 140px;
@@ -58,16 +59,80 @@
 .nav-login-cart button:active{
     background: #f3f3f3;
 }
-.nav-cart-count{
-width: 22px;
-height:22px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: -35px;
-margin-left: -55px;
-border-radius: 11px;
-font-size: 14px;
-background: red;
-color: white;
+.cart-icon-container {
+  position: relative;   
+}
+
+.nav-cart-count {
+  position: absolute;  
+  top: -6px;
+  right: -8px;
+
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  font-size: 14px;
+  background: red;
+  color: white;
+}
+
+
+.nav-hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+
+  .navbar{
+    padding: 12px 16px; 
+    width: auto;
+  }
+
+  .nav-logo p{
+    font-size: 22px;
+  }
+
+  .nav-hamburger{
+    display: block;
+    font-size: 24px;
+  }
+
+  .nav-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 20px;
+    gap: 25px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.25);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .nav-menu.active{
+    right: 0;
+  }
+
+  .nav-login-cart{
+    display: none;
+  }
+
+  .nav-menu li{
+    font-size: 20px;
+  }
+
+  .nav-menu hr{
+    width: 50%;
+    height: 2px;
+  }
 }

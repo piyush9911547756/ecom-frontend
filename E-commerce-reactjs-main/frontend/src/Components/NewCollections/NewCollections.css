@@ -24,3 +24,44 @@ margin-bottom: 100px;
     margin-top: 50px;
     gap: 30px;
 }
+
+/* Tablet */
+@media (max-width: 1024px){
+
+  .newcollections h1{
+    font-size: 32px;
+  }
+
+  .collections{
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px){
+
+  .newcollections{
+    gap: 6px;
+    margin-bottom: 60px;
+  }
+
+  .newcollections h1{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .newcollections hr{
+    width: 120px;
+    height: 4px;
+  }
+
+  .collections{
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 15px;
+    margin-top: 30px;
+  }
+}
