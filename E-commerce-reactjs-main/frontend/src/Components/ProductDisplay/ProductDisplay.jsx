@@ -49,7 +49,7 @@ ${product.old_price}
       <div>XXL</div>
     </div>
   </div>
-  <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+  <button className='btn' onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
   <div className="productdisplay-right-category">
     <span>Category:<span>Women ,T-Shirt , Crop Top</span></span>
   </div>

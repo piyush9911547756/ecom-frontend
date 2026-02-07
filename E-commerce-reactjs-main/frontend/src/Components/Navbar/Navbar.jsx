@@ -18,18 +18,18 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      {/* Logo */}
+    
       <div className="nav-logo">
         <img src={logo} alt="logo" height="40" />
         <p><Link to="/">Shopify</Link></p>
       </div>
 
-      {/* Hamburger */}
+
       <div className="nav-hamburger" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </div>
 
-      {/* Menu */}
+   
       <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
         <li onClick={() => handleMenuClick("home")}>
           <Link to="/">Home</Link>
@@ -50,11 +50,7 @@ const Navbar = () => {
           <Link to="/kids">Kids</Link>
           {menu === "kids" && <hr />}
         </li>
-
-     
       </ul>
-
-      {/* Desktop login/cart */}
       <div className="nav-login-cart desktop-only">
         <Link to="/login">
           <button>Login</button>

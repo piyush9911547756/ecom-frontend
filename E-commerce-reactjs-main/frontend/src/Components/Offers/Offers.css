@@ -1,51 +1,84 @@
-.offers{
-    width: 65%;
-    height: 60vh;
-    display: flex;
-    margin: auto;
-    margin-top: 150px;
-    padding: 0px 140px;
-    margin-bottom: 150px;
-    background:linear-gradient(180deg,#e1ffea22, #47fdae 60%);
-}
-.offers-left{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: -80px;
-}
-.offers-left h1{
-    color: #171717;
-    font-size: 40px;
-}
-.offers-left p{
-    color: #171717;
-    font-size: 18px;
-    font-weight: 600;
-}
+@media (max-width: 992px){
 
-.offers-left button{
-    width: 200px;
-    height: 40px;
-    border-radius: 35px;
-    background: #ff4141;
-    border: none;
-    color: white;
+  .offers{
+    width: 85%;
+    padding: 40px 50px;
+    height: auto;       
+    gap: 30px;
+  }
+
+  .offers-left{
+    margin-left: 0;      
+  }
+
+  .offers-left h1{
+    font-size: 32px;
+  }
+
+  .offers-left p{
     font-size: 16px;
-    font-weight: 500;
-    margin-top: 30px;
-    cursor: pointer;
-}
-.offers-right{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  }
 
+  .offers-right img{
+    max-height: 350px;
+  }
 }
-.offers-right img{
-     max-width: 100%;
-  max-height: 500px;
-  height: auto;
+
+
+@media (max-width: 768px){
+
+  .offers{
+    width: 95%;
+    flex-direction: column;  
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .offers-left{
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .offers-left h1{
+    font-size: 26px;
+  }
+
+  .offers-left p{
+    font-size: 14px;
+  }
+
+  .offers-left button{
+    width: 100%;
+    max-width: 240px;
+    height: 42px;
+  }
+
+  .offers-right{
+    justify-content: center;
+  }
+
+  .offers-right img{
+    max-height: 280px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px){
+
+  .offers{
+    padding: 20px 15px;
+  }
+
+  .offers-left h1{
+    font-size: 20px;
+  }
+
+  .offers-left p{
+    font-size: 13px;
+  }
+
+  .offers-right img{
+    max-height: 220px;
+  }
 }
