@@ -1,26 +1,79 @@
+.offers{
+  width: 65%;
+  margin: 120px auto;
+  padding: 50px 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  border-radius: 16px;
+  background: linear-gradient(180deg,#e1ffea22,#47fdae 60%);
+
+  height: auto;
+}
+
+.offers-left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 0; 
+}
+
+.offers-left h1{
+  font-size: 40px;
+  color: #171717;
+  margin-bottom: 10px;
+}
+
+.offers-left p{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.offers-left button{
+  width: 200px;
+  height: 44px;
+  border-radius: 30px;
+  background: #ff4141;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.offers-right{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-right img{
+  max-width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+
 @media (max-width: 992px){
 
   .offers{
     width: 85%;
-    padding: 40px 50px;
-    height: auto;       
-    gap: 30px;
-  }
-
-  .offers-left{
-    margin-left: 0;      
+    padding: 40px;
   }
 
   .offers-left h1{
     font-size: 32px;
   }
 
-  .offers-left p{
-    font-size: 16px;
-  }
-
   .offers-right img{
-    max-height: 350px;
+    max-height: 320px;
   }
 }
 
@@ -28,17 +81,16 @@
 @media (max-width: 768px){
 
   .offers{
-    width: 95%;
-    flex-direction: column;  
+    flex-direction: column; 
     text-align: center;
+
+    width: 95%;
     padding: 30px 20px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    gap: 25px;
   }
 
   .offers-left{
     align-items: center;
-    margin-left: 0;
   }
 
   .offers-left h1{
@@ -46,29 +98,21 @@
   }
 
   .offers-left p{
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .offers-left button{
     width: 100%;
     max-width: 240px;
-    height: 42px;
-  }
-
-  .offers-right{
-    justify-content: center;
   }
 
   .offers-right img{
-    max-height: 280px;
-    margin-top: 20px;
+    max-height: 260px;
   }
 }
-@media (max-width: 480px){
 
-  .offers{
-    padding: 20px 15px;
-  }
+
+@media (max-width: 480px){
 
   .offers-left h1{
     font-size: 20px;
@@ -79,6 +123,6 @@
   }
 
   .offers-right img{
-    max-height: 220px;
+    max-height: 200px;
   }
 }

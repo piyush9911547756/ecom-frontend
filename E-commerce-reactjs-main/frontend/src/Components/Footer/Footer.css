@@ -4,7 +4,10 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding: 40px 20px;
 }
+
+/* logo */
 .footer-logo{
     display: flex;
     align-items: center;
@@ -16,27 +19,38 @@
     font-size: 40px;
     font-weight: 700;
 }
+
+/* links */
 .footer-links{
     display: flex;
     list-style: none;
     gap: 20px;
     color: #252525;
     font-size: 20px;
+    flex-wrap: wrap; /* important */
+    justify-content: center;
 }
 
 .footer-links li{
     cursor: pointer;
 }
+
+/* social */
 .footer-social-icon{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .footer-icons-container{
     padding: 10px;
     padding-bottom: 6px;
     background: #fbfbfb;
     border: 1px solid #ebebeb;
 }
+
+/* copyright */
 .footer-copyright{
     display: flex;
     flex-direction: column;
@@ -47,10 +61,103 @@
     color: #1a1a1a;
     font-size: 20px;
 }
+
 .footer-copyright hr{
     width: 80%;
     border: none;
     border-radius: 10px;
     height: 3px;
     background: #c7c7c7;
+}
+
+
+/* =========================
+   TABLET (≤ 1024px)
+   ========================= */
+@media (max-width: 1024px){
+
+    .footer{
+        gap: 40px;
+    }
+
+    .footer-logo p{
+        font-size: 32px;
+    }
+
+    .footer-links{
+        font-size: 18px;
+        gap: 16px;
+    }
+
+    .footer-copyright{
+        font-size: 18px;
+    }
+}
+
+
+/* =========================
+   MOBILE (≤ 768px)
+   ========================= */
+@media (max-width: 768px){
+
+    .footer{
+        gap: 30px;
+    }
+
+    .footer-logo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo p{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .footer-links{
+        font-size: 16px;
+        gap: 12px;
+    }
+
+    .footer-social-icon{
+        gap: 15px;
+    }
+
+    .footer-copyright{
+        font-size: 16px;
+        gap: 20px;
+    }
+
+    .footer-copyright hr{
+        width: 90%;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE (≤ 480px)
+   ========================= */
+@media (max-width: 480px){
+
+    .footer{
+        gap: 20px;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .footer-logo p{
+        font-size: 22px;
+    }
+
+    .footer-social-icon{
+        gap: 12px;
+    }
+
+    .footer-copyright{
+        font-size: 14px;
+    }
 }

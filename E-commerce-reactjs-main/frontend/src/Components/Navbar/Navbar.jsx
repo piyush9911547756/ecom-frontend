@@ -15,7 +15,7 @@ const Navbar = () => {
     setMenu(name)
     setIsOpen(false)
   }
-
+  
   return (
     <div className='navbar'>
     

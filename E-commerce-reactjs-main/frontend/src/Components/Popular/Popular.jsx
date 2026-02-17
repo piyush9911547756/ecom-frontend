@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Popular.css"
 import Item from "../Item/Item"
-import data_product from '../../assets/data'
+import data_product from '../../assets/all_product'
 
 const Popular = () => {
   return (
@@ -10,7 +10,7 @@ const Popular = () => {
       <hr/>
       
       <div className='popular-item'>
-        {data_product.map((item, i) =>  (
+        {data_product.filter(item => item.category === 'women').map((item, i) =>  (
           <Item
             key={i}
             id={item.id}

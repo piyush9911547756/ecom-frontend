@@ -6,7 +6,43 @@
     font-size: 16px;
     font-weight: 600;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     text-transform: capitalize;
+    flex-wrap: wrap; /* important for small screens */
+    text-align: center;
+}
+
+
+/* =====================
+   TABLET (≤ 1024px)
+   ===================== */
+@media (max-width: 1024px){
+    .bredcrums{
+        font-size: 15px;
+        gap: 6px;
+    }
+}
+
+
+/* =====================
+   MOBILE (≤ 768px)
+   ===================== */
+@media (max-width: 768px){
+    .bredcrums{
+        font-size: 14px;
+        gap: 5px;
+        padding: 0 15px;
+    }
+}
+
+
+/* =====================
+   SMALL MOBILE (≤ 480px)
+   ===================== */
+@media (max-width: 480px){
+    .bredcrums{
+        font-size: 12px;
+        gap: 4px;
+        line-height: 1.5;
+    }
 }

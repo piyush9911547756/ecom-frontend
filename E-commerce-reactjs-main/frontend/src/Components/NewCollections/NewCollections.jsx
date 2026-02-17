@@ -1,6 +1,6 @@
 import React from 'react'
 import "./NewCollections.css"
-import new_collections from '../../assets/newcollections'
+import new_collections from '../../assets/all_product'
 import Item from '../Item/Item'
 const NewCollections = () => {
   return (
@@ -8,7 +8,7 @@ const NewCollections = () => {
         <h1>NEW COLLECTIONS</h1>
         <hr/>
         <div className='collections'>
-            {new_collections.map((item,i)=>{
+            {new_collections.filter(item => item.category === 'men').map((item,i)=>{
                 return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
             })}
         </div>

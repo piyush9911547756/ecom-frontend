@@ -1,12 +1,15 @@
-.descriptionbox {
+.descriptionbox{
     margin: 80px 50px;
- 
-
 }
 
+
+/* navigator tabs */
 .descriptionbox-navigator{
     display: flex;
+    flex-wrap: wrap; /* important */
 }
+
+/* each tab */
 .descriptionbox-nav-box{
     display: flex;
     align-items: center;
@@ -17,11 +20,13 @@
     height: 50px;
     border: 1px solid #d0d0d0;
 }
+
 .descriptionbox-nav-box .fade{
     background: #fbfbfb;
     color: #555;
-
 }
+
+/* description content */
 .descriptionbox-description{
     display: flex;
     flex-direction: column;
@@ -29,4 +34,74 @@
     border: 1px solid #D0D0D0;
     padding: 40px;
     padding-bottom: 50px;
+}
+
+
+
+/* =========================
+   TABLET (≤ 1024px)
+   ========================= */
+@media (max-width: 1024px){
+
+    .descriptionbox{
+        margin: 60px 30px;
+    }
+
+    .descriptionbox-nav-box{
+        width: 130px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .descriptionbox-description{
+        padding: 30px;
+    }
+}
+
+
+/* =========================
+   MOBILE (≤ 768px)
+   ========================= */
+@media (max-width: 768px){
+
+    .descriptionbox{
+        margin: 40px 20px;
+    }
+
+    .descriptionbox-navigator{
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .descriptionbox-nav-box{
+        width: 45%;  /* 2 tabs per row */
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .descriptionbox-description{
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE (≤ 480px)
+   ========================= */
+@media (max-width: 480px){
+
+    .descriptionbox{
+        margin: 30px 10px;
+    }
+
+    .descriptionbox-nav-box{
+        width: 100%;  /* stacked */
+    }
+
+    .descriptionbox-description{
+        padding: 15px;
+        gap: 15px;
+        font-size: 13px;
+    }
 }
